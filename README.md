@@ -20,3 +20,12 @@ Open `index.html` in your browser.
 If you want a local server:
 - `python3 -m http.server 8000`
 - Visit `http://localhost:8000`
+
+## Structure
+- `src/config.js` shared constants and biome species lists
+- `src/terrain.js` Perlin tile generation, biome rules, colors, and isometric projection
+- `src/camera.js` center dead-zone mouse panning and screen-to-grid conversion
+- `src/render.js` sky, terrain tile rendering, and biome decorations
+- `src/mobs.js` mob spawning, wandering behavior, and sprite drawing
+- `src/hud.js` top-left info card rendering
+- `src/main.js` p5 lifecycle (`setup`/`draw`) and overall orchestration
